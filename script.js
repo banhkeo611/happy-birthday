@@ -12,7 +12,7 @@ const rewards = {
     2: {
         title: "Kỷ niệm đáng nhớ 📸",
         text: "Bức ảnh này ôn lại kỷ niệm xíu nè. Chơi game gặp toàn thần đồng không cay mới lạ  Đã thua rồi còn gì!👇",
-        img: "figure-music/thang.jpg" // Vừa có chữ chạy vừa có ảnh ở dưới
+        img: "thang.jpg" // Vừa có chữ chạy vừa có ảnh ở dưới
     },
     3: {
         title: "Lời chúc ý nghĩa 🌟",
@@ -22,12 +22,12 @@ const rewards = {
     4: {
         title: "Khoảnh khắc chứng minh 🥰",
         text: "Bất ngờ chưa! Chơi game để giải trí mà nhờ cứ vui là cứ chơi mà thắng như này nữa thế lại mà hay. Đủ wow rồi đó",
-        img: "figure-music/thang21.jpg"
+        img: "thang21.jpg"
     },
     5: {
         title: "Chiến thắng nào! 🏆",
         text: "Bạn tôi mà lị cứ luôn làm gì bạn thích nhé không sợ gì cả nha! Đca mà nên vậy làm gương cho thằng đệ đi theo luôn nè!",
-        img: "figure-music/thang3.jpg"
+        img: "thang3.jpg"
     },
     6: {
         title: "Nụ cười tỏa nắng ✨",
