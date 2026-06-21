@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Sinh Nhật! 🎉</title>
+    
+    <meta property="og:title" content="Có một bất ngờ dành cho bạn! 🎂">
+    <meta property="og:description" content="Nhấp vào link này để mở món quà sinh nhật nhé!">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=500">
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Thư viện tạo pháo hoa giấy -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <div class="sky-background">
+        <span class="cloud c1">☁️</span>
+        <span class="cloud c2">☁️</span>
+        <span class="cloud c3">☁️</span>
+        <span class="cloud c4">☁️</span>
+        <span class="cute-icon i1">✨</span>
+        <span class="cute-icon i2">💖</span>
+        <span class="cute-icon i3">⭐</span>
+        <span class="cute-icon i4">🌈</span>
+        <span class="cute-icon i5">🦄</span>
+    </div>
+
+    <!-- KHÔNG GIAN 3 HỘP QUÀ DI CHUYỂN -->
+    <div id="gift-zone" class="gift-container">
+        <h2 class="guide-title">Chạm vào từng hộp quà để khám phá bí mật! ✨</h2>
+        
+      <div class="gift-box box1" onclick="openGift(1)">🎁</div>
+        <div class="gift-box box2" onclick="openGift(2)">🎁</div>
+        <div class="gift-box box3" onclick="openGift(3)">🎁</div>
+        <div class="gift-box box4" onclick="openGift(4)">🎁</div>
+        <div class="gift-box box5" onclick="openGift(5)">🎁</div>
+        <div class="gift-box box6" onclick="openGift(6)">🎁</div>
+        <div class="gift-box box7" onclick="openGift(7)">🎁</div>
+    </div>
+
+    <!-- KHU VỰC HIỂN THỊ PHẦN THƯỞNG KHI BẤM VÀO QUA -->
+    <div id="reward-modal" class="modal hidden" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <!-- Nút đóng -->
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            
+            <!-- Nội dung thay đổi động theo từng hộp -->
+            <div id="reward-body"></div>
+        </div>
+    </div>
+    
+    <div id="final-wish" class="final-wish-screen hidden">
+        <h1 class="final-text">Chúc Mừng Sinh Nhật Vui Vẻ ! 🥳🎂✨</h1>
+    </div>
+
+    <!-- Nhạc nền Sinh nhật bản truyền thống không lời (hoặc có lời nhẹ nhàng) -->
+    <audio id="bg-music" src="/figure-music/Hpy.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
